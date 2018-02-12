@@ -110,21 +110,24 @@ int* Array::operator+(const Array& M) const {
 	}
 	return result;
 }
-int main() {
-	Array A(20);
-	Array B(20);
-	A.addToTop(30);
-	A.addToEnd(50);
-	A.removeFromTop();
-	A.removeFromBottom();
-	A.reverseArray();
-	int *DD;
-	DD = A.checkOdd();
-	cout << "Sum: " << A.returnSum() << endl;
-	cout << "Size : " << A.getSize() << endl;
-	A.writeToFile("Data.txt");
-	DD = A + B;
-	for (int i = 0; i < (A.getSize() + B.getSize()); i++)
-		cout << DD[i] << endl;
-	return 0;
-}
+/*
+ int main() {
+ Array A(20);
+ Array B(20);
+ A.addToTop(30);
+ A.addToEnd(50);
+ A.removeFromTop();
+ A.removeFromBottom();
+ A.reverseArray();
+ int *DD;
+ DD = A.checkOdd();
+ cout << "Sum: " << A.returnSum() << endl;
+ cout << "Size : " << A.getSize() << endl;
+ A.writeToFile("Data.txt");
+ DD = A + B;
+ for (int i = 0; i < (A.getSize() + B.getSize()); i++)
+ cout << DD[i] << endl;
+
+ return 0;
+ }
+ */
